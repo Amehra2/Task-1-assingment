@@ -2,11 +2,18 @@ import React from "react";
 import "./style.css";
 
 
-export default function App() {
-  return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
-  );
+
+function App(){
+
+  const [treatId, settreatId] = React.useState('');
+
+  const [treatCourseId, settreatCourseId] = React.useState('');
+
+  const [type, settype] = React.useState('');
+
+  const [category, setcategory] = React.useState('');
+
+  const [name, setname] = React.useState('');
+
+  const [startDate, setstartDate] = React.useState('');
 }
