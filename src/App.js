@@ -22,6 +22,16 @@ function App(){
   
   }
 
+  function clearClickHandler () {
+    settreatId('');
+    settreatCourseId('');
+    settype('');
+    setcategory('');
+    setname('');
+    setstartDate('');
+}
+
+
   return(
     <div>
 
@@ -45,7 +55,12 @@ function App(){
 
         <br/>
 
-        <input placeholder="startDate" value={startDate}  onChange = { e => startDate(e.target.value)}  ></input>
+        <input placeholder="startDate" value={startDate}  onChange = { e => setstartDate(e.target.value)}  ></input>
+        <button style={{color:"blue"}} onClick={showClickHandler}>show</button>
+
+      <button style={{color:"red"}} onClick={clearClickHandler}>Clear</button>
+
+   
 
         </div>
     );
