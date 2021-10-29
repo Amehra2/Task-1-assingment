@@ -1,16 +1,10 @@
 import React from 'react';
+import "./style.css";
 
-function Medicaltreatment (prop) {
-
-  function toString(prop){
-      return "[" + "treatId = "+ prop.treatId+ ", treatCourseId = "+prop.treatCourseId+ ", type = "+prop.type + ", category ="+prop.category+ ", name = "+prop.name+ ", startDate = "+prop.startDate +"]";
-    }
-
+export default function Medicaltreatment (props) {  
   return (
       <div>
-          {toString(prop)};  
+    {props.treatId}  {props.treatCourseId} {props.type} {props.category} {props.name} {props.startDate}
       </div>
-  );
+  )
 }
-
-export default Medicaltreatment;
