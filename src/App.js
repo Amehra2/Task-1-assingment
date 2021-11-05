@@ -19,6 +19,18 @@ const startDate1 = "01-01-2020";
 
 <div> 
   <MedicalTreatment treatId={treatId1} treatCourseId={treatCourseId1} type={type1}  category={category1} name={name1} startDate={startDate1}/>
+  
+  <p>Treat ID: {treatId1}</p>
+  <p>TreatCourseId: {treatCourseId1}</p>
+  <p>Type: {type1}</p>
+  <p>Category: {category1} </p>
+  <p>Name: {name1}</p>
+  <p> startDate: {startDate1}</p>
+
+  
+  
+  
+  
   </div>
    )
  }
