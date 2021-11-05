@@ -5,6 +5,6 @@ export default function Medicaltreatment (props) {  //Here I am creating and dec
   return (
       <div> 
     {props.treatId} {props.treatCourseId} {props.type} {props.category} {props.name} {props.startDate} 
-      </div>
+      </div> 
   )
 }
